@@ -21,8 +21,8 @@
 <table border="1">
 
     <tr>
-        <td>Author type</td>
-        <td align="center">Author type count</td>
+        <td><b>Author type</b></td>
+        <td align="center"><b>Author type count</b></td>
     </tr>
     {% for x in typeaut %}
     <tr>
@@ -36,17 +36,7 @@
     {% endfor %}
     </table>
     <br>
-Type author:
-    ({% for x in typeaut %}
-   {{ x.authorship  }},
-    {% endfor %} )
 <br>
-    Type author count:
-    ({% for x in typeaut %}
-   {{ x.typeautcount  }},
-    {% endfor %} )
-     
-<br><br>
 Total of cataloguing : <b> {{ bookcount }} </b>.
 <br><br>Number of books catalogued in this current year ( {% now "Y" %} ) = <b> {{ catyear }} </b>
 <br>Number of books catalogued today = <b> {{ catt }} </b>
