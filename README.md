@@ -1,6 +1,6 @@
 Model of Realtime Cataloguing Report 
 
-GitHub repository : https://github.com/rudysant/catreport.git 
+GitHub repository : https://github.com/rudysant/catstat.git 
 
 Python & Django based
 
@@ -74,6 +74,7 @@ Literature folk
 Literature criticism
 Biography single
 Biography collective
+Biography auto
 General
 
 Size :
@@ -85,7 +86,6 @@ YYf
 
 Format :
 Book monograph
-Book serial
 Non book electronic document
 Non book video
 Non book ephemera
@@ -111,6 +111,14 @@ Create project:
 > django-admin startproject catreport .
 Create app
 > python manage.py startapp catstat
+
+Edit setting.py
+- Add app name
+
+Edit models.py to create database
+> python manage.py makemigrations
+> python manage.py migrate
+
 
 
  
