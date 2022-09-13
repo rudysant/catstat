@@ -1,0 +1,43 @@
+<h3>Realtime Cataloguing Report</h3>
+
+<table border="1">
+
+<tr>
+    <td>No</td>
+    <td align="center">Title</td>
+    <td align="center">Type of author</td>
+</tr>
+{% for x in mycatalogue %}
+<tr>
+    
+    <td>{{ x.id }}</td>
+    <td>{{ x.fulltitle }}</td>
+    <td>{{ x.authorship }}</td>
+</tr>
+{% endfor %}
+</table>
+<br>
+<br>Type of authorship
+<table border="1">
+
+    <tr>
+        <td><b>Author type</b></td>
+        <td align="center"><b>Author type count</b></td>
+    </tr>
+    {% for x in typeaut %}
+    <tr>
+        
+        
+        <td>{{ x.authorship  }}</td>
+        <td align="center">{{ x.typeautcount }}</td>
+       
+       
+    </tr>
+    {% endfor %}
+    </table>
+    <br>
+<br>
+Total of cataloguing : <b> {{ bookcount }} </b>.
+<br><br>Number of books catalogued in this current year ( {% now "Y" %} ) = <b> {{ catyear }} </b>
+<br>Number of books catalogued today = <b> {{ catt }} </b>
+<br>Number of books catalogued this month = <b> {{ catmonth }} </b>
