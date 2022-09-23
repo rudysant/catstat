@@ -1,14 +1,15 @@
 from django.contrib import admin
 
-from . models import Catalogues, Size
+from . models import Catalogues
 
 class CataloguesA(admin.ModelAdmin):
-    list_display = ('fulltitle','consnumber')
+    list_display = ('id', 'title')
+    list_per_page = 10
+
     
-class SizeA(admin.ModelAdmin):
-    list_display = ('id', 'booksize')
 
 admin.site.register(Catalogues, CataloguesA)
-admin.site.register(Size, SizeA)
+
+
 
 # Register your models here.
