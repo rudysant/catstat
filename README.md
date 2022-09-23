@@ -117,6 +117,8 @@ Edit models.py to create database
 > python manage.py makemigrations
 > python manage.py migrate
 
+Edit file urls.py on project's root folder
+
 
 
  
