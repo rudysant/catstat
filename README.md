@@ -1,8 +1,13 @@
-Model of Realtime Cataloguing Report 
+Model of Realtime Cataloguing Statistics
 
 GitHub repository : https://github.com/rudysant/catstat.git 
 
 Python & Django based
+
+Feature :
+- General statistics
+- Detailed statistics
+- Search by date
 
 Statistics :
 - Daily
