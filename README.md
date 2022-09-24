@@ -89,36 +89,7 @@ Format :
 - Non book ephemera
 - Non book audio
 
-
-Steps:
-Create environment
-Create environment folder : nlacat
-Go to nlacat folder
-> Python -m venv .venv
-> source .venv/bin/activate
-
-Open VS Code software
-Open nlacat folder
-Select command palette from menu : Ctrl Shift P
-Select python interpreter
-Select .venv as recommended
-From menu select Terminal > New terminal
-Install django
-> python -m pip install django
-Create project: 
-> django-admin startproject catreport .
-Create app
-> python manage.py startapp catstat
-
-Edit setting.py
-- Add app name
-
-Edit models.py to create database
-> python manage.py makemigrations
-> python manage.py migrate
-
-Edit file urls.py on project's root folder
-- add path to app : path('catstat/', include('catstat.urls'))
+Detailed steps see "Realtime cataloguing"
 
 
 
