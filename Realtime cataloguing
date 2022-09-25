@@ -1,0 +1,24 @@
+Realtime cataloguing statistics with Python programming language and Django framework.
+
+Background:
+The need of new reporting procedure by using realtime statistics generated from daily cataloguing works. The stats is web based can be seen through local network.
+
+Purpose:
+- Create general statistics : number 
+- Create detailed statistics : number with percentage for each items of information
+
+Tools:
+- Hardware : Computer with internet access
+- Softare : Operating system, Python with Django framework, internet browser
+
+Steps :
+- Create a new folder named 'catproject' as the environment folder. 
+- Create virtual environment for Django. Virtual env is required to isolate the project from other projects if any. 
+	- Go to 'catproject' directory
+	- On the command prompt >python -m venv .venv
+	- Activate the new environment >source .venv/bin/activate
+- Create project:
+	(.venv)>django-admin startproject realstat
+- Create an application inside the project:
+	(.venv)>python manage.py startapp catstat
+
