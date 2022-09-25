@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Catalogues(models.Model):
     entry_date = models.DateField()
     consignment_no = models.IntegerField(default=461)
@@ -33,20 +32,16 @@ class Catalogues(models.Model):
         ], default='No')
 
     authorship_type = models.CharField(max_length=50, choices=[
-
-        ('Single author','Single author'),
+        ('Single work','Single work'),
         ('Collaboration','Collaboration'),
         ('Compilation','Compilation'),
-        ('Others','Others')
-
+        ('N_A','N_A')
         ], default='Single')
 
     language = models.CharField(max_length=50, choices=[
         ('Indonesian','Indonesian'),
         ('English','English'),
         ('Indonesian local','Indonesian local'),
-
-        ('Multi language','Multi language'),
         ('Unknown','Unknown')
         ], default='Indonesian')
     
@@ -79,9 +74,7 @@ class Catalogues(models.Model):
         ('Biography-single','Biography-single'),
         ('Biography-collective','Biography-collective'),
         ('Biography-auto','Biography-auto'),
-
-        ('Dictionary','Dictionary')
-
+        ('Dictionary','Dictionary'),
         ], default='General non fiction')
 
     format = models.CharField(max_length=100, choices=[
@@ -117,9 +110,6 @@ class Catalogues(models.Model):
        ('300-Social-military','300-Social-military'),
        ('300-Social-education','300-Social-education'),
        ('300-Social-law','300-Social-law'),
-
-       ('300-Social-human rights','300-Social-human rights'),
-
        ('400-Language-linguistics','400-Language-linguistics'),
        ('400-Language-sociolinguistics','400-Language-sociolinguistics'),
        ('500-Science-general','500-Science-general'),
@@ -136,10 +126,5 @@ class Catalogues(models.Model):
        ('900-Geography and travel','900-Geography and travel'),
         ('900-Biography','900-Biography')
         ], null=True)
-
     
     
-
-
-
-
