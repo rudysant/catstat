@@ -1,4 +1,3 @@
-
 Model of Realtime Cataloguing Statistics
 
 GitHub repository : https://github.com/rudysant/catstat.git 
@@ -29,7 +28,6 @@ Model / DB :
 Multi volume? Y/N
 Cons number
 Copycatmod? Y/N
-
 
 ISBN :
 Yes
@@ -119,7 +117,6 @@ Create project:
 > django-admin startproject catreport .
 Create app
 > python manage.py startapp catstat
-
 
 
 
