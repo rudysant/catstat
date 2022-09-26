@@ -178,6 +178,7 @@ def detail_authorship(request, authorship_type):
 class SearchResultsView(ListView):
     model = Catalogues
     template_name = 'search_result.html'
+    paginate_by = 10
 
     def get_queryset(self):
         query1 = self.request.GET.get('q1')
