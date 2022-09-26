@@ -1,25 +1,3 @@
-
-Model of Realtime Cataloguing Report 
-
-GitHub repository : https://github.com/rudysant/catreport.git 
-
-Python & Django based
-
-Statistics :
-Daily
-Weekly
-Monthly
-Annual
-By cons number
-
-Model / DB :
-ID
-Entrydate (auto current date)
-Fulltitle :
-Title original
-Title translation
-Title adaptation
-
 Model of Realtime Cataloguing Statistics
 
 GitHub repository : https://github.com/rudysant/catstat.git 
