@@ -118,6 +118,7 @@ Create project:
 Create app
 > python manage.py startapp catstat
 
+you are kenthir
 
 
  
