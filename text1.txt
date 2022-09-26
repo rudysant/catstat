@@ -1,2 +1,6 @@
 This is only for test git.
+
 This is a new line locally
+
+While this is new line remotely
+
