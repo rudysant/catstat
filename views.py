@@ -184,10 +184,13 @@ class SearchResultsView(ListView):
         query1 = self.request.GET.get('q1')
         query2 = self.request.GET.get('q2')
         object_list = Catalogues.objects.filter(
-          Q(entry_date__gte=query1)&Q(entry_date__lte=query2)
-
-              )
+          Q(entry_date__gte=query1)&Q(entry_date__lte=query2))
         return object_list
+        
+ #   def get_context_data(self, *, object_list=None, **kwargs):
+ #  	context = super().get_context_data(**kwargs)
+  #  	context['total'] = self.get_queryset().count
+   #  return context
 
 def yearpublish_chart(request):
   labels = []

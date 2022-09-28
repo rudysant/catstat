@@ -6,6 +6,7 @@
 
     <tr>
         <td>No</td>
+        
         <td align="center">Title</td>
 		<td align="center">Entry date</td>
         
@@ -15,12 +16,13 @@
     
     <tr>
         
-        <td> {{ forloop.counter }} </td>
+        <td> {{forloop.counter0|add:page_obj.start_index}} </td>
+       
         <td>{{ x.title }}</td>
 		<td>{{ x.entry_date }}</td>
         
     </tr>
     {% endfor %}
 	</table>
-
+<br>
 {% include "pagination3.html" %}
