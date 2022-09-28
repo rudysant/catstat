@@ -27,3 +27,4 @@
 
   <a href="?{{ request.GET.urlencode }}&page={{ page_obj.next_page_number }}">Next Page »</a>
 {% endif %}
+of total <b> {{ page_obj.paginator.count }} </b> titles.

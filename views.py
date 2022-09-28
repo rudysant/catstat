@@ -231,9 +231,10 @@ class SearchResultsView(ListView):
       template_name = 'search_result.html'
       paginate_by = 10
 
-    def get_queryset(self):
-        query1 = self.request.GET.get('q1')
-        query2 = self.request.GET.get('q2')
-        object_list = Catalogues.objects.filter(Q(entry_date__gte=query1)&Q(entry_date__lte=query2))
-        return object_list
+def get_queryset(self):   
+       query1 = self.request.GET.get('q1')
+       query2 = self.request.GET.get('q2')
+       object_list = Catalogues.objects.filter(Q(entry_date__gte=query1)&Q(entry_date__lte=query2))
+       return object_list
+   
 
